@@ -1,0 +1,49 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000;
+  --faded-color: rgba(0,0,0,0.6);
+  --box-shadow-color: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.css-heg063-MuiTabs-flexContainer{
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+  background-color: var(--background-color);
+}
+.ant-modal-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+@media (min-width: 700px) {
+  #simple-tabpanel-0, #simple-tabpanel-1{
+    width:50%;
+  }
+}
+

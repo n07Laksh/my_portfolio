@@ -1,0 +1,487 @@
+.main {
+  width: 100%;
+}
+.main_comp {
+  margin: 120px;
+}
+.footer_main {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  color: #fff;
+  background: hsla(191, 38%, 44%, 1);
+  background: linear-gradient(
+    0deg,
+    hsla(191, 38%, 44%, 1) 47%,
+    hsla(210, 81%, 22%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(191, 38%, 44%, 1) 47%,
+    hsla(210, 81%, 22%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    hsla(191, 38%, 44%, 1) 47%,
+    hsla(210, 81%, 22%, 1) 100%
+  );
+}
+.footer_main_comp {
+  display: flex;
+  align-items: center;
+}
+.main_home {
+  display: flex;
+}
+.main_home > div {
+  width: 50%;
+}
+.main_home_sec {
+  display: flex;
+  justify-content: space-around;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  justify-content: center;
+}
+.my_name {
+  font-weight: 900;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-size: 2.1rem;
+  margin-top: 20px;
+}
+.my_job {
+  margin: 10px 0;
+  color: var(--faded-color);
+}
+.my_job_desc {
+  color: var(--faded-color);
+  text-align: justify;
+  margin: 25px 0;
+  width: 85%;
+  line-height: 1.5;
+}
+.my_img {
+  width: 280px;
+}
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 37px 100px 30px 100px;
+}
+.about {
+  display: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.about_det {
+  display: flex;
+  margin: 50px 0;
+}
+.about_det > div {
+  width: 50%;
+}
+.vect_img {
+  width: 85%;
+}
+.intro_para {
+  font-size: 15px;
+  word-spacing: 2px;
+  color: var(--faded-color);
+  width: 85%;
+  text-align: justify;
+  line-height: 1.5;
+}
+.para_div {
+  margin-top: 40px;
+}
+.progress {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.progress > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.progress > div h3 {
+  font-weight: 900;
+  color: #1976d2;
+}
+.progress > div p {
+  color: var(--faded-color);
+  font-size: 13px;
+}
+.chip {
+  width: 200px;
+  height: 45px;
+  font-weight: 800;
+  font-size: 16px;
+}
+.work_icon {
+  width: 24px;
+  height: 24px;
+}
+.card {
+  width: 220px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow-color);
+}
+
+.contentStyle {
+  width: 100%;
+  height: 250px;
+  color: #fff;
+  background: #052030;
+  margin: 0;
+}
+.crouselItem {
+  display: flex;
+  height: 100%;
+}
+.crouselItem > div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.crosel_div {
+  width: 80%;
+  margin: 50px auto;
+}
+.crouselImg {
+  width: 50%;
+}
+.crouselContext {
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.crousePara {
+  color: rgba(255, 255, 255, 0.4);
+}
+.hire_me {
+  display: flex;
+  width: 80%;
+}
+.hire_img_container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.hire_img {
+  width: 65%;
+}
+.hire_img_context {
+  width: 50%;
+}
+.hireHeading {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 25px 0 10px 0;
+}
+.hireParagraph {
+  font-size: 15px;
+  width: 261px;
+  color: var(--faded-color);
+  text-align: justify;
+}
+.hire_me_cont {
+  margin-top: 170px;
+}
+.footer_intro {
+  margin: 0 150px;
+  display: flex;
+  width: 100%;
+}
+.footer_intro > div {
+  width: 50%;
+}
+.footer_intro_heading {
+  font-size: 23px;
+  font-weight: 900;
+  font-style: italic;
+}
+.footer_intro_pos {
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.5;
+}
+.footer_intro_ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer_intro_ul > li {
+  cursor: pointer;
+}
+.footer_author {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  color: var(--faded-color);
+}
+.contact_main {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.contact_main > div {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+.shareImages {
+  width: 100%;
+}
+.contact_card {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+}
+.overlay_div {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(42, 165, 213, 0.64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #045c72;
+  transition: .3s ease;
+  opacity: 0;
+  border-radius: 20px;
+}
+.contact_card:hover .overlay_div {
+  height: 100%;
+  opacity: 100;
+}
+.footer_links{
+  text-decoration: none;
+  color: #fff;
+}
+.check_div {
+  width:25px;
+}
+.service_list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.page_crouselItem___l79p > div > div {
+  width: 50%;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+}
+
+@media (prefers-reduced-motion) {
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .main_comp {
+    margin: 0 10px 90px 10px;
+  }
+  .main_home {
+    flex-direction: column-reverse;
+    row-gap: 50px;
+    margin-top: 30px;
+  }
+  .main_home > div {
+    width: 100%;
+  }
+  .main_home_sec {
+    flex-direction: row-reverse;
+  }
+  .my_name {
+    font-weight: 900;
+    font-size: 1.5rem;
+    word-spacing: -2px;
+  }
+  .my_job_desc {
+    width: 100%;
+    font-size: 13px;
+  }
+  .my_img {
+    width: 200px;
+  }
+  .about {
+    font-size: 1.2rem;
+  }
+  .about_det {
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 20px 0 70px 0;
+  }
+  .about_det > div {
+    width: 100%;
+  }
+  .vect_img {
+    width: 100%;
+  }
+  .intro_para {
+    font-size: 13px;
+    width: 100%;
+    word-spacing: 0;
+  }
+  .para_div {
+    margin-top: 10px;
+  }
+  .progress {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .progress > div p {
+    font-size: 12px;
+  }
+  .download_btn {
+    display: flex;
+    justify-content: center;
+  }
+  .chip {
+    width: 32%;
+    height: 30px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .card {
+    width: 100%;
+  }
+  .contentStyle {
+    height: 250px;
+    margin: 0;
+  }
+  .crouselItem {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .crouselItem > div {
+    width: 100%;
+    height:100%;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 10px 0 0 10px;
+  }
+  .crosel_div {
+    width: 100%;
+  }
+  .crouselImg {
+    width: 65%;
+    margin: 0;
+  }
+  .crouselContext {
+    row-gap: 0px;
+    width: 90%;
+    margin-top: 13px;
+  }
+  .crouselTitle {
+    font-size: 14px;
+  }
+  .crousePara {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  .hire_me {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .hire_me_cont {
+    margin-top: 40px;
+  }
+  .hireHeading {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 25px 0 10px 0;
+  }
+  .hireParagraph {
+    font-size: 13px;
+    width: 160px;
+    color: var(--faded-color);
+    text-align: justify;
+  }
+  .hire_img {
+    width: 100%;
+  }
+  .footer_main {
+    padding: 40px 0;
+    margin-bottom: 30px;
+  }
+  .footer_intro_heading {
+    font-size: 16px;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .footer_intro_pos {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  .footer_intro {
+    margin: 10px;
+    flex-direction: column;
+  }
+  .footer_intro > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer_intro_ul {
+    margin: 20px 0;
+    justify-content: center;
+  }
+  .footer_intro_ul > li,
+  .footer_intro_ul > a {
+    width: 25%;
+  }
+  .footer_author p {
+    font-size: 13px;
+  }
+  .footer_author {
+    margin-top: 10px;
+  }
+  .contact_card {
+    width:100%;
+  }
+  .contact_main > div {
+    width: 36%;
+  }
+  .contact_main {
+    gap: 20px;
+  }
+  .overlay_div {
+    font-size:14px;
+  }
+  .check_div {
+    width:20px;
+  }
+}
