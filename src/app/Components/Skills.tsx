@@ -37,7 +37,6 @@ const Skills = () => {
         return "info";
       case "warning":
         return "warning";
-      // Add other mappings if needed
       default:
         return "default";
     }

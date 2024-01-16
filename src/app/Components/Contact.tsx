@@ -1,11 +1,8 @@
 import React from "react";
 import styles from "../page.module.css";
 
-import EmailIcon from "@mui/icons-material/Email";
 import Link from "next/link";
 import Image from "next/image";
-
-import { WhatsApp } from "@mui/icons-material";
 import email from "../Assets/email.jpeg";
 import whapp from "../Assets/whatsapp.jpeg";
 import IG from "../Assets/insta.jpeg";
