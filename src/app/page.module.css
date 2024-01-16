@@ -130,7 +130,7 @@
 }
 .card {
   width: 220px;
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
   color: var(--text-color);
   box-shadow: var(--box-shadow-color);
 }
