@@ -2,8 +2,8 @@
     "version": 2,
     "builds": [
       {
-        "src": "src/app/**",
-        "use": "@now/node"
+        "src": "src/app/*",
+        "use": "@vercel/node"
       }
     ]
   }
