@@ -9,7 +9,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 
-
 import styles from "../page.module.css";
 import fullStackDev from "../Assets/app-development.png";
 import frontendDev from "../Assets/front-end-programming.png";
@@ -90,15 +89,21 @@ const Services = () => {
         onOk={handleOk}
         onCancel={handleCancel}
       >
-        <div style={{marginTop:"10px"}}>
+        <div style={{ marginTop: "10px" }}>
           {service &&
             service.map((item, index) => (
               <div key={index} className={styles.service_list}>
-                <div className={styles.check_div}><Image style={{width:"100%",height:"auto"}} src={check} alt="check"/></div>
+                <div className={styles.check_div}>
+                  <Image
+                    style={{ width: "100%", height: "auto" }}
+                    src={check}
+                    alt="check"
+                  />
+                </div>
                 <div>{item}</div>
               </div>
             ))}
-            </div>
+        </div>
       </Modal>
 
       <div className={styles.main_comp} id="Services">
@@ -127,7 +132,18 @@ const Services = () => {
             },
           }}
         >
-          <Card className={styles.card} sx={{ minWidth: 220 }}>
+          <Card
+            sx={{
+              backgroundColor: "var(--background-color)",
+              color: "var(--text-color)",
+              boxShadow: "var(--box-shadow-color)",
+              width: "220px",
+              minWidth: "220px",
+              "@media only screen and (max-width:700px)": {
+                width: "100%",
+              },
+            }}
+          >
             <CardContent>
               <Typography
                 variant="h5"
@@ -166,7 +182,18 @@ const Services = () => {
               </Button>
             </CardActions>
           </Card>
-          <Card className={styles.card} sx={{ minWidth: 220 }}>
+          <Card
+            sx={{
+              backgroundColor: "var(--background-color)",
+              color: "var(--text-color)",
+              boxShadow: "var(--box-shadow-color)",
+              width: "220px",
+              minWidth: "220px",
+              "@media only screen and (max-width:700px)": {
+                width: "100%",
+              },
+            }}
+          >
             <CardContent>
               <Typography
                 variant="h5"
@@ -204,7 +231,18 @@ const Services = () => {
               </Button>
             </CardActions>
           </Card>
-          <Card className={styles.card} sx={{ minWidth: 220 }}>
+          <Card
+            sx={{
+              backgroundColor: "var(--background-color)",
+              color: "var(--text-color)",
+              boxShadow: "var(--box-shadow-color)",
+              width: "220px",
+              minWidth: "220px",
+              "@media only screen and (max-width:700px)": {
+                width: "100%",
+              },
+            }}
+          >
             <CardContent>
               <Typography
                 variant="h5"
@@ -241,7 +279,18 @@ const Services = () => {
               </Button>
             </CardActions>
           </Card>
-          <Card className={styles.card} sx={{ minWidth: 220 }}>
+          <Card
+            sx={{
+              backgroundColor: "var(--background-color)",
+              color: "var(--text-color)",
+              boxShadow: "var(--box-shadow-color)",
+              width: "220px",
+              minWidth: "220px",
+              "@media only screen and (max-width:700px)": {
+                width: "100%",
+              },
+            }}
+          >
             <CardContent>
               <Typography
                 variant="h5"

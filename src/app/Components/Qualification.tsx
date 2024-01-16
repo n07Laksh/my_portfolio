@@ -92,10 +92,17 @@ const Qualification = () => {
               value={value}
               onChange={handleChange}
               aria-label="icon label tabs example"
-              sx={{justifyContent: "center"}}
             >
-              <Tab sx={{color:"inherit"}} icon={<SchoolIcon />} label="Education" />
-              <Tab sx={{color:"inherit"}} icon={<WorkHistoryIcon />} label="Work" />
+              <Tab
+                sx={{ color: "inherit" }}
+                icon={<SchoolIcon />}
+                label="Education"
+              />
+              <Tab
+                sx={{ color: "inherit" }}
+                icon={<WorkHistoryIcon />}
+                label="Work"
+              />
             </Tabs>
 
             <Box
