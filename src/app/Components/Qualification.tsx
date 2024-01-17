@@ -92,6 +92,12 @@ const Qualification = () => {
               value={value}
               onChange={handleChange}
               aria-label="icon label tabs example"
+              className="lakshnishad"
+              sx={{
+                "& > div > div": {
+                  justifyContent: "center",
+                },
+              }}
             >
               <Tab
                 sx={{ color: "inherit" }}

@@ -11,7 +11,6 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-
 const pages = [
   "Home",
   "About",
@@ -112,175 +111,49 @@ function Navbar() {
 
   return (
     <>
-    <AppBar
-      sx={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        zIndex: 20,
-        background: "var(--background-color)",
-        color: "var(--text-color)",
-        transition: "background-color 0.5s, color 0.5s",
-        boxShadow:
-          "0px 2px 4px -1px rgba(0, 0, 0, 0),0px 4px 5px 0px rgba(0, 0, 0, 0.07),0px 1px 10px 0px rgba(0, 0, 0, 0)",
-        "@media screen and (max-width: 768px)": {
-          top: "auto",
-          bottom: 0,
-        },
-      }}
-      position="static"
-    >
-      <Container
-        maxWidth="xl"
+      <AppBar
         sx={{
-          "@media screen and (min-width: 768px)": {
-            padding: "0 120px",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 20,
+          background: "var(--background-color)",
+          color: "var(--text-color)",
+          transition: "background-color 0.5s, color 0.5s",
+          boxShadow:
+            "0px 2px 4px -1px rgba(0, 0, 0, 0),0px 4px 5px 0px rgba(0, 0, 0, 0.07),0px 1px 10px 0px rgba(0, 0, 0, 0)",
+          "@media screen and (max-width: 768px)": {
+            top: "auto",
+            bottom: 0,
           },
-          padding: "0 10px",
         }}
+        position="static"
       >
-        <Toolbar
+        <Container
+          maxWidth="xl"
           sx={{
-            "@media screen and (max-width: 768px)": {
-              flexDirection: "row-reverse",
+            "@media screen and (min-width: 768px)": {
+              padding: "0 120px",
             },
+            padding: "0 10px",
           }}
-          disableGutters
         >
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
-            <div
-              style={{
-                margin: "16px 0",
-                color: "inherit",
-                display: "block",
-                fontWeight: 500,
-                fontSize: "0.875rem",
-                cursor: "pointer",
-                width: "20px",
-              }}
-              onClick={toggleDarkMode}
-            >
-              <Image
-                style={{
-                  width: "100%",
-                  height: "auto",
-                }}
-                src={thmeMode === "dark" ? Sun : Moon}
-                alt={thmeMode === "dark" ? "Light Mode" : "Dark Mode"}
-              />
-            </div>
-
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page, index) => (
-                <Link
-                  key={index}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    smoothScroll(page);
-                  }}
-                  href={`#${page}`}
-                >
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography sx={{ fontSize: "14px" }} textAlign="center">
-                      {page}
-                    </Typography>
-                  </MenuItem>
-                </Link>
-              ))}
-            </Menu>
-          </Box>
-
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
+          <Toolbar
             sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "unset",
-              fontWeight: 700,
-              letterSpacing: "0px",
-              color: "inherit",
-              textDecoration: "none",
-              fontSize: "18px",
+              "@media screen and (max-width: 768px)": {
+                flexDirection: "row-reverse",
+              },
             }}
+            disableGutters
           >
-            Laxmi Lal
-          </Typography>
-
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <div>
-              <h2 style={{ fontWeight: 900 }}>Laxmi Lal</h2>
-            </div>
-            <div style={{ display: "flex", alignItems: "center" }}>
-              {pages.map((page, index) => (
-                <Link
-                  key={index}
-                  href={`#${page}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    smoothScroll(page);
-                  }}
-                >
-                  <Button
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    sx={{
-                      my: 2,
-                      color: "inherit",
-                      display: "block",
-                      fontSize: "12px",
-                    }}
-                  >
-                    {page}
-                  </Button>
-                </Link>
-              ))}
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
               <div
                 style={{
                   margin: "16px 0",
                   color: "inherit",
                   display: "block",
+                  fontWeight: 500,
                   fontSize: "0.875rem",
-                  lineHeight: 1.75,
-                  letterSpacing: "0.02857em",
-                  padding: "6px 8px",
                   cursor: "pointer",
                   width: "20px",
                 }}
@@ -295,11 +168,145 @@ function Navbar() {
                   alt={thmeMode === "dark" ? "Light Mode" : "Dark Mode"}
                 />
               </div>
-            </div>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+              sx={{
+                display: { xs: "block", md: "none" },
+                '& > div:nth-child(3)': { 
+                  backgroundColor: 'var(--background-color)',
+                },
+              }}
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+              >
+                {/* <div className="lakshji"> */}
+                  {pages.map((page, index) => (
+                    <Link
+                      key={index}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        smoothScroll(page);
+                      }}
+                      href={`#${page}`}
+                    >
+                      <MenuItem key={page} onClick={handleCloseNavMenu}>
+                        <Typography
+                          sx={{ fontSize: "14px" }}
+                          textAlign="center"
+                        >
+                          {page}
+                        </Typography>
+                      </MenuItem>
+                    </Link>
+                  ))}
+                {/* </div> */}
+              </Menu>
+            </Box>
+
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="#app-bar-with-responsive-menu"
+              sx={{
+                mr: 2,
+                display: { xs: "flex", md: "none" },
+                flexGrow: 1,
+                fontFamily: "unset",
+                fontWeight: 700,
+                letterSpacing: "0px",
+                color: "inherit",
+                textDecoration: "none",
+                fontSize: "18px",
+              }}
+            >
+              Laxmi Lal
+            </Typography>
+
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <div>
+                <h2 style={{ fontWeight: 900 }}>Laxmi Lal</h2>
+              </div>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                {pages.map((page, index) => (
+                  <Link
+                    key={index}
+                    href={`#${page}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      smoothScroll(page);
+                    }}
+                  >
+                    <Button
+                      key={page}
+                      onClick={handleCloseNavMenu}
+                      sx={{
+                        my: 2,
+                        color: "inherit",
+                        display: "block",
+                        fontSize: "12px",
+                      }}
+                    >
+                      {page}
+                    </Button>
+                  </Link>
+                ))}
+                <div
+                  style={{
+                    margin: "16px 0",
+                    color: "inherit",
+                    display: "block",
+                    fontSize: "0.875rem",
+                    lineHeight: 1.75,
+                    letterSpacing: "0.02857em",
+                    padding: "6px 8px",
+                    cursor: "pointer",
+                    width: "20px",
+                  }}
+                  onClick={toggleDarkMode}
+                >
+                  <Image
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                    }}
+                    src={thmeMode === "dark" ? Sun : Moon}
+                    alt={thmeMode === "dark" ? "Light Mode" : "Dark Mode"}
+                  />
+                </div>
+              </div>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
     </>
   );
 }

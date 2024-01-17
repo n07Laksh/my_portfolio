@@ -1,8 +1,9 @@
 :root {
   --background-color: #ffffff;
   --text-color: #000;
-  --faded-color: rgba(0,0,0,0.6);
-  --box-shadow-color: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  --faded-color: rgba(0, 0, 0, 0.6);
+  --box-shadow-color: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 *,
 html {
@@ -24,17 +25,9 @@ body {
   color: var(--text-color);
   transition: background-color 0.5s, color 0.5s;
 }
-
-.css-heg063-MuiTabs-flexContainer{
-  align-items: center !important;
-  justify-content: center !important;
-}
 a {
   text-decoration: none;
   color: var(--text-color);
-}
-.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
-  background-color: var(--background-color) !important;
 }
 .ant-modal-body {
   display: flex;
@@ -42,8 +35,8 @@ a {
   row-gap: 10px;
 }
 @media (min-width: 700px) {
-  #simple-tabpanel-0, #simple-tabpanel-1{
-    width:50%;
+  #simple-tabpanel-0,
+  #simple-tabpanel-1 {
+    width: 50%;
   }
 }
-
