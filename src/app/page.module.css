@@ -414,7 +414,7 @@
   }
   .hireParagraph {
     font-size: 13px;
-    width: 160px;
+    width: 100%;
     color: var(--faded-color);
     text-align: justify;
   }
