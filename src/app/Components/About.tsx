@@ -12,7 +12,7 @@ const About = () => {
     const resumePath = "myResume.pdf";
     const link = document.createElement("a");
     link.href = resumePath;
-    link.download = "my_resume.pdf";
+    link.download = "laxmilal_resume.pdf";
     link.click();
   };
   return (
